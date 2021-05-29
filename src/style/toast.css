@@ -1,0 +1,160 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+
+}
+.my-toast {
+  position: relative;
+  left: 800px;
+  max-width: 400px;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.my-toast .msg {
+  margin-bottom: 20px;
+}
+
+.notification {
+  position: fixed;
+  top: 20px;
+  left: 1580px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.notification_block {
+  position: relative;
+  margin-top: 20px;
+  word-wrap: break-word;
+  color: black;
+  display: flex;
+  height: 60px;
+  max-height: 200px;
+  overflow: hidden;
+  flex-wrap: wrap;
+  width: 300px;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 0.75rem 2rem 0.75rem 0.75rem;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.notification_msg {
+  word-wrap: break-word;
+  overflow: hidden;
+  font-size: 20px;
+}
+
+
+.notification_close {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 black;
+  opacity: 0.6;
+  margin: 0;
+  border-radius: 0;
+  transition: color .3s;
+}
+
+.notification_close:hover {
+  color: white;
+}
+
+.successful {
+  border: 1px solid #3CEB35;
+  background: #3CEB35;
+}
+
+.error {
+  border: 1px solid #EB2817;;
+  background: #EB2817;
+}
+
+.radio_block {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.radio:first-child {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.notification_hide {
+  display: none;
+  padding: 2px;
+  position: relative;
+  color: black;
+  height: 30px;
+  text-align: center;
+  width: 300px;
+  cursor: pointer;
+  opacity: .9;
+  font-size: 0.875rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  word-break: break-word;
+}
+
+.show {
+  display: block;
+  margin-top: 20px;
+}
+
+.btn_save {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 100px;
+  position: relative;
+  left: 200px;
+  text-align: center;
+}
+
+.btn_reset {
+  max-width: 100px;
+  position: relative;
+  left: 200px;
+  text-align: center;
+}
+
+/*
+right top -
+  top: 20px;
+  left: 1580px;
+
+left top -
+   top: 20px;
+  left: 10px;
+
+left bottom -
+  top: 900px;
+  left: 10px;
+*/
+
+
+
